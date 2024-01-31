@@ -1,0 +1,89 @@
+body{
+    background-color: #87CEEB; /* Sky Blue */
+    margin:0;
+    padding:0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height:100vh;
+}
+
+.sun{
+    width:100px;
+    height:100px;
+    background-color: #FFD700; /* Yellow Sun Traditional Colour Code */
+    border-radius: 50%;
+
+    position:relative;
+    animation: BouncingSun 5s infinite; /*infinite*/
+}
+
+@keyframes animationFunctionThatWeCreate {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes sunSettingColourChange {
+
+    0% {
+        background-color: rgb(251, 244, 235);
+    }
+    25%{
+        background-color: bisque;
+    }
+    50%{
+        background-color: gold;
+    }
+    100%{
+        background-color: goldenrod;
+    }
+
+}
+
+
+@keyframes BouncingSun {
+
+    
+/* colors */
+    0% {
+        background-color: rgb(251, 244, 235);
+    }
+    25%{
+        background-color: bisque;
+    }
+    50%{
+        background-color: gold;
+    }
+    100%{
+        background-color: goldenrod;
+    }
+
+
+    /* Scale */
+   to {
+        scale: 2; 
+    }
+
+
+
+
+    /* bounce */
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-40px);
+    }
+
+    60% {
+        transform: translateY(-20px);
+    }
+
+
+}
